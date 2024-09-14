@@ -1,12 +1,19 @@
 body {
     background-color: #000000;
-    color: #ffff;
+    color: #ffffff; /* Corrigido o valor da cor */
     margin: 0;
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: auto;
 }
 
-h1{
+.container {
+    background: url('https://img.freepik.com/fotos-gratis/fundo-de-textura-grunge_1048-11687.jpg?w=1060&t=st=1726323380~exp=1726323980~hmac=0c8e718b948359e64b6c2515e75429f53941c9c1938b6f0c85b6d9961d4d2f3d');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
     font-size: 105px;
     display: flex;
     justify-content: center;
@@ -15,24 +22,41 @@ h1{
 
 p {
     font-size: 45px;
-    font-style: italic ;
-    font-family: 'dramaturgo CUba';
+    font-style: italic;
+    font-family: 'dramaturgo Cuba'; 
     display: flex;
     justify-content: center;
-    padding: 25px 10px ;
+    padding: 25px 10px;
     margin-bottom: 12rem;
 }
 
 h2 {
     font-size: 60px;
-    padding: auto;
     margin-left: 2em;
     display: flex;
 }
 
-.list-ol {
-    grid-template-columns: repeat(3, 1fr);
+.pers {
+    margin-top: 3em;
+    font-size: 105px;
+    display: flex;
+    justify-content: center;
+    padding: 1.6em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    color: #ddd4d4;
+    background: url('https://img.freepik.com/fotos-gratis/cena-de-horror-com-um-cemiterio-assustador_23-2150975194.jpg?w=1380&t=st=1726323964~exp=1726324564~hmac=08618b0f861ca4f5fd224022c2de51b9d1de369259aaf42f809d007805c41e19');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+.list-ol {
+    display: grid; /* Mantém o grid */
+    grid-template-columns: repeat(3, 1fr);
+    font-feature-settings: 'frac'; /* Ativa a exibição de frações reduzidas */
+}
+
+
 ol li {
     list-style-type: none;
     font-size: 40px;
@@ -41,12 +65,11 @@ ol li {
 }
 
 ol li a {
-    text-emphasis: none;
     text-decoration: none;
-    font-family: 'dramaturgo CUba';
+    font-family: 'dramaturgo Cuba';
     font-size: 55px;
     font-style: italic;
-    color: #ffff;
+    color: #ffffff; /* Corrigido para hex code completo */
     display: flex;
     justify-content: center;
 }
@@ -55,29 +78,40 @@ ol li p {
     font-size: 25px;
 }
 
-
-ol li img{
-    display: flex;
-    justify-content: center;
+ol li img {
+    display: block; /* Alinhamento corrigido */
+    margin: 2em auto; /* Centralizando a imagem */
     width: 900px;
     height: 650px;
-    margin: 2em;
-    padding: 10em;
-    padding-top: 20px;
-    padding-bottom: 0px;
+    padding: 20px; /* Removidos valores extras */
     border-radius: 15px;
 }
-
 
 .div-horror {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding: 1.6em;
+    background: url('https://img.freepik.com/vetores-gratis/textura-angustiado-azul-escuro_53876-80491.jpg?w=740&t=st=1726324274~exp=1726324874~hmac=5f08b0621e0bec3a37bd0634f7ddeee1ac0d1f8cde2caa996e79cd05a63058cf');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 .img-carteira {
-    margin: 0 700px; 
+    margin: 0 auto; /* Centralizado horizontalmente */
     border-radius: 15px;
+}
+
+.pior-ling {
+    margin-top: 3em;
+    font-size: 105px;
+    display: flex;
+    justify-content: center;
+    padding: 1.3em;
+    background: url('https://blog.ebaconline.com.br/blog/wp-content/uploads/2022/12/rhntgjz3cfkjkv6pq8mjw-e1671317351710.png');
+    background-size: cover; /* Corrigido o valor */
+    background-repeat: no-repeat;
 }
 
 ul {
@@ -85,23 +119,23 @@ ul {
     font-size: 40px;
     padding: 1em;
     margin-bottom: 100px;
-    margin-left: 100px;
+    margin-left: 125px;
+    font-family: 'dramaturgo Cuba';
 }
 
 a {
-    text-emphasis: none;
     text-decoration: none;
-    font-family: 'dramaturgo CUba';
+    font-family: 'dramaturgo Cuba';
     font-size: 55px;
     font-style: italic;
-    color: #ffff;
+    color: #ffffff;
     display: flex;
     justify-content: center;
     cursor: pointer;
 }
 
 a:hover {
-    
+    text-decoration: underline; /* Adicionado estilo de hover */
 }
 
 .iframe {
@@ -120,6 +154,7 @@ iframe {
 .youtube {
     width: 65vw;
 }
+
 .maps {
     width: 90vw;
 }
