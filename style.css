@@ -80,5 +80,8 @@ ol li img{
 }
 
 ul {
-    
+    list-style-type: none;
+    font-size: 40px;
+    padding: 1em;
+    margin-bottom: 100px;
 }
