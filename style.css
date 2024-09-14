@@ -65,6 +65,7 @@ ol li img{
     padding: 10em;
     padding-top: 20px;
     padding-bottom: 0px;
+    border-radius: 15px;
 }
 
 
@@ -84,4 +85,41 @@ ul {
     font-size: 40px;
     padding: 1em;
     margin-bottom: 100px;
+    margin-left: 100px;
+}
+
+a {
+    text-emphasis: none;
+    text-decoration: none;
+    font-family: 'dramaturgo CUba';
+    font-size: 55px;
+    font-style: italic;
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+a:hover {
+    
+}
+
+.iframe {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 45px;
+}
+
+iframe {
+    margin: 10rem 5rem;
+    border-radius: 15px;
+}
+
+.youtube {
+    width: 65vw;
+}
+.maps {
+    width: 90vw;
 }
